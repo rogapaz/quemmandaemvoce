@@ -170,7 +170,7 @@ fbq('track', 'PageView');
 fbq('track', 'ViewContent', {content_name: 'Quem Manda em Você?', value: 29.90, currency: 'BRL'});
 document.addEventListener('click', function (e) {
   var a = e.target.closest && e.target.closest('a[href*="pay.hotmart.com"]');
-  if (a) fbq('track', 'InitiateCheckout', {content_name: 'Quem Manda em Você?', value: 29.90, currency: 'BRL'});
+  if (a) fbq('trackCustom', 'CliqueBotaoCompra', {content_name: 'Quem Manda em Você?'});
 });
 </script>
 <noscript><img height="1" width="1" style="display:none"
